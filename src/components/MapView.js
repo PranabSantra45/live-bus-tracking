@@ -14,10 +14,11 @@ L.Icon.Default.mergeOptions({
   shadowUrl:
     "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png"
 });
-
 const busIcon = new L.Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/512/61/61231.png",
-  iconSize: [32, 32]
+  iconUrl: "https://cdn-icons-png.flaticon.com/512/3448/3448339.png",
+  iconSize: [40, 40],
+  iconAnchor: [20, 20]
+
 });
 
 
@@ -121,7 +122,7 @@ function MapView({ selectedBus }) {
     <MapContainer
       center={[13.0827, 80.2707]}
       zoom={13}
-      style={{ height: "60vh", width: "100%" }}
+      style={{ height: "60vh", width: "100%", borderRadius:"15px" }}
     >
 
       <TileLayer

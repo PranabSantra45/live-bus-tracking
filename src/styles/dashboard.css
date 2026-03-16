@@ -1,61 +1,123 @@
 .dashboard {
-  font-family: Arial;
+  font-family: "Segoe UI", Arial;
 }
 
 .dashboard-content {
-  padding: 20px;
+  padding: 10px;
 }
 
-h1 {
-  margin-bottom: 20px;
+/* TITLE */
+
+h1{
+  font-size:28px;
+  margin-top:0;
+  margin-bottom:25px;
+  color:#333;
 }
 
-/* MAIN SECTION */
+/* MAIN GRID */
 
-.main-section {
-  display: flex;
-  gap: 20px;
+.main-section{
+  display:flex;
+  gap:25px;
+  align-items:stretch;
 }
 
-/* TABLE */
+/* CARDS */
 
-.table-section {
-  flex: 1;
-  min-width: 280px;
+.table-section,
+.map-section{
+  background:white;
+  border-radius:14px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:all 0.25s ease;
 }
 
-.bus-table {
-  width: 100%;
-  border-collapse: collapse;
+.table-section:hover,
+.map-section:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.12);
 }
 
-.bus-table th,
-.bus-table td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
+/* TABLE CARD */
+
+.table-section{
+  flex:1;
+  min-width:320px;
 }
 
-/* MAP */
+/* MAP CARD */
 
-.map-section {
-  flex: 2;
+.map-section{
+  flex:2;
 }
 
-/* MOBILE RESPONSIVE */
+/* SECTION TITLES */
 
-@media (max-width: 900px) {
+.table-section h2,
+.map-section h2{
+  margin-top:0;
+  margin-bottom:15px;
+  font-size:18px;
+  color:#444;
+  border-bottom:1px solid #eee;
+  padding-bottom:8px;
+}
 
-  .main-section {
-    flex-direction: column;
-  }
+/* BUS TABLE */
 
-  .table-section {
-    width: 100%;
-  }
+.bus-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
 
-  .map-section {
-    width: 100%;
+.bus-table th{
+  background:#f5f7fb;
+  text-align:left;
+  padding:10px;
+  font-weight:600;
+}
+
+.bus-table td{
+  padding:10px;
+  border-bottom:1px solid #eee;
+}
+
+/* HOVER ROW */
+
+.bus-table tr:hover{
+  background:#f0f4ff;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+/* SEARCH BAR */
+
+input{
+  border:1px solid #ddd;
+  padding:8px 12px;
+  border-radius:6px;
+  outline:none;
+}
+
+input:focus{
+  border-color:#7b0022;
+}
+
+/* MAP CONTAINER */
+
+.leaflet-container{
+  border-radius:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .main-section{
+    flex-direction:column;
   }
 
 }

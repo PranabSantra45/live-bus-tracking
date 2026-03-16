@@ -1,48 +1,40 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", "Inter", Arial, sans-serif;
+  background: linear-gradient(135deg,#eef2f7,#e3ebf5);
 }
 
-/* Navbar */
+/* NAVBAR */
 
-.navbar {
-  background: #8b0025;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
+.navbar{
+  height:70px;
+  background:linear-gradient(90deg,#7b0022,#a4002b);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 40px;
+  box-shadow:0 4px 18px rgba(0,0,0,0.2);
 }
 
-/* Layout */
-
-.dashboard-container {
-  display: flex;
-  padding: 20px;
+.navbar h2{
+  margin:0;
+  font-weight:600;
+  letter-spacing:0.5px;
 }
 
-/* Sidebar */
-
-.sidebar {
-  width: 300px;
+.profile{
+  background:white;
+  color:#7b0022;
+  padding:8px 16px;
+  border-radius:30px;
+  font-weight:600;
+  font-size:14px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
-.profile-card {
-  background: #b07b4f;
-  color: white;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-}
+/* MAIN */
 
-.profile-img {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-/* Content */
-
-.content {
-  flex: 1;
-  margin-left: 30px;
+.main-layout{
+  padding:30px;
 }

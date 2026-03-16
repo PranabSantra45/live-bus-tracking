@@ -6,7 +6,7 @@ function App() {
     <div className="app-container">
 
       <header className="navbar">
-        <h2>Sathyabama - Smart Bus Tracker</h2>
+        <h2>SATHYABAMA - Smart Bus Tracker</h2>
         <div className="profile">Pranab Kumar Santra</div>
       </header>
 

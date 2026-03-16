@@ -38,7 +38,12 @@ function BusTable({ onBusSelect }) {
         placeholder="Search bus route..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        style={{ marginBottom: "10px", padding: "6px", width: "100%" }}
+          style={{
+          marginBottom:"12px",
+          padding:"10px",
+          width:"90%",
+          fontSize:"14px"
+          }}
       />
 
       <table className="bus-table">
