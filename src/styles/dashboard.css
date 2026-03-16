@@ -1,0 +1,61 @@
+.dashboard {
+  font-family: Arial;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+  display: flex;
+  gap: 20px;
+}
+
+/* TABLE */
+
+.table-section {
+  flex: 1;
+  min-width: 280px;
+}
+
+.bus-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bus-table th,
+.bus-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* MAP */
+
+.map-section {
+  flex: 2;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  .table-section {
+    width: 100%;
+  }
+
+  .map-section {
+    width: 100%;
+  }
+
+}
