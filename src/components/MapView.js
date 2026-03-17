@@ -156,7 +156,7 @@ function MapView({ selectedBus }) {
 
             <Popup>
 
-              Route: {bus.displayCode}
+              Route: {bus.routeId || bus.displayCode}
               <br />
 
               Bus: {bus.busnumber}
