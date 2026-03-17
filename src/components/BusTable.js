@@ -66,7 +66,7 @@ function BusTable({ onBusSelect }) {
               onClick={() => onBusSelect(bus)}
               style={{ cursor: "pointer" }}
             >
-              <td>{bus.displayCode}</td>
+              <td>{bus.displayCode || bus.routeId}</td>
               <td>{bus.busnumber}</td>
               <td>{bus.status}</td>
               <td>{bus.currentlocation?.speed || 0} km/h</td>
